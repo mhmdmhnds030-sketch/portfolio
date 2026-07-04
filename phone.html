@@ -1,14 +1,13 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 <head>
     <title>Avatar - Contact Us</title>
-   <link rel="preconnect" href="https://googleapis.com">
-<link rel="preconnect" href="https://gstatic.com" crossorigin>
-<link href="https://googleapis.com/css2?family=Cinzel:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
+    <!-- تم تصحيح روابط الـ preconnect هنا بإضافة fonts. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./man.css"> 
     <style>
-    
         .contact-box {
             display: flex;
             flex-direction: column;
@@ -60,26 +59,24 @@
      <div class="contaner">
         <header>
             <a class="logo" href="index.html">avatar</a>
-          <ul>
-    <li><a href="index.html">home</a></li>
-    <li><a href="clans.html">clans</a></li> 
-    <li><a href="video.html">video</a></li>
-    <li><a href="phone.html" style="color: rgb(10, 218, 10);">phone</a></li>
-    <li><a href="#">about</a></li>
-              <li><a href="about.html">about</a></li>
-
-</ul>
-
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="clans.html">clans</a></li> 
+                <li><a href="video.html">video</a></li>
+                <li><a href="phone.html" style="color: rgb(10, 218, 10);">phone</a></li>
+               
+                <li><a href="about.html">about</a></li>
+            </ul>
         </header>
         
         
-        <div class="contact-box">
+        <form class="contact-box" onsubmit="event.preventDefault(); alert('Message Sent Successfully!');">
             <h2>Contact Us</h2>
             <input type="text" class="input-field" placeholder="Your Name" required>
             <input type="email" class="input-field" placeholder="Your Email" required>
             <textarea class="input-field" placeholder="Your Message" required></textarea>
-            <button type="submit" onclick="alert('Message Sent Successfully!')">Send Message</button>
-        </div>
+            <button type="submit">Send Message</button>
+        </form>
      </div>
 </body>
 </html>
