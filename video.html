@@ -7,7 +7,6 @@
         <link href="https://googleapis.com" rel="stylesheet">
         <link rel="stylesheet" href="./man.css"> 
         <style>
-            /* تعديل الأبعاد لتتسع لـ 4 فيديوهات بشكل شبكة منظم */
             .video-grid {
                 display: flex;
                 justify-content: center;
@@ -16,10 +15,10 @@
                 margin-top: 10px;
                 padding: 0 40px;
                 max-height: 400px;
-                overflow-y: auto; /* يتيح التمرير إذا صغرت الشاشة */
+                overflow-y: auto;
             }
             .video-card {
-                width: 45%; /* ليعرض فيديوهين متجاورين في كل سطر */
+                width: 45%;
                 background: rgba(255, 255, 255, 0.05);
                 padding: 10px;
                 border-radius: 8px;
@@ -27,7 +26,7 @@
             }
             video {
                 width: 100%;
-                height: 140px; /* تصغير الارتفاع قليلاً لتناسب الأربعة مساحة الكارت */
+                height: 140px;
                 border-radius: 6px;
                 background: #000;
             }
@@ -38,7 +37,6 @@
                 font-family: 'Poppins', sans-serif;
                 text-align: center;
             }
-            /* تعديل شريط التمرير الداخلي ليكون شكله جميلاً */
             .video-grid::-webkit-scrollbar {
                 width: 6px;
             }
@@ -67,37 +65,34 @@
             </header>
             
             <div class="video-grid">
-              
+                <!-- الفيديو الأول -->
                 <div class="video-card">
-                    <video controls autoplay muted loop>
-                        <source src="https://googleapis.com" type="video/mp4">
-                        Your browser does not support the video tag.
+                    <video controls poster="https://alphacoders.com">
+                        <source src="https://production.cloud" type="video/mp4">
+                        <source src="https://archive.org" type="video/mp4">
                     </video>
                     <h3>Avatar: Official Trailer</h3>
                 </div>
-            
+                <!-- الفيديو الثاني -->
                 <div class="video-card">
-                    <video controls autoplay muted loop>
-                        <source src="https://googleapis.com" type="video/mp4">
-                        Your browser does not support the video tag.
+                    <video controls poster="https://alphacoders.com">
+                        <source src="https://archive.org" type="video/mp4">
+                    </video>
+                    <h3>Avatar: The Way of Water</h3>
+                </div>
+                <!-- الفيديو الثالث -->
+                <div class="video-card">
+                    <video controls poster="https://alphacoders.com">
+                        <source src="https://archive.org" type="video/mp4">
+                    </video>
+                    <h3>Avatar: Fire and Ash</h3>
+                </div>
+                <!-- الفيديو الرابع -->
+                <div class="video-card">
+                    <video controls poster="https://alphacoders.com">
+                        <source src="https://archive.org" type="video/mp4">
                     </video>
                     <h3>Avatar: Behind the Scenes</h3>
-                </div>
-            
-                <div class="video-card">
-                    <video controls autoplay muted loop>
-                        <source src="https://googleapis.com" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <h3>Avatar: Cinematic Gameplay</h3>
-                </div>
-            
-                <div class="video-card">
-                    <video controls autoplay muted loop>
-                        <source src="https://googleapis.com" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <h3>Avatar: Special Interview</h3>
                 </div>
             </div>
          </div>
