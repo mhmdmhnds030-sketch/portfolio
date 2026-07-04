@@ -1,14 +1,12 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
         <title>Avatar - Videos</title>
         <link rel="preconnect" href="https://googleapis.com">
         <link rel="preconnect" href="https://gstatic.com" crossorigin>
         <link href="https://googleapis.com" rel="stylesheet">
-        <!-- سنستخدم نفس ملف الـ CSS الأساسي للحفاظ على الخلفية والتصميم -->
         <link rel="stylesheet" href="./man.css"> 
         <style>
-            /* تنسيقات خاصة بصفحة الفيديوهات لترتيب العرض */
             .video-grid {
                 display: flex;
                 justify-content: center;
@@ -24,7 +22,7 @@
                 border-radius: 8px;
                 box-shadow: 0 4px 15px rgba(0,0,0,0.3);
             }
-            iframe, video {
+            iframe {
                 width: 100%;
                 height: 220px;
                 border-radius: 6px;
@@ -55,16 +53,15 @@
                 </ul>
             </header>
             
-            <!-- شبكة عرض الفيديوهات -->
             <div class="video-grid">
                 <div class="video-card">
-                    <!-- يمكنك استبدال الرابط برابط فيديو حقيقي أو يوتيوب -->
-                    <iframe src="https://youtube.com" allowfullscreen></iframe>
-                    <h3>Avatar: The Way of Water - Trailer</h3>
+                    
+                    <iframe src="https://youtube.com" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h3>Avatar: The Way of Water - Scene</h3>
                 </div>
                 <div class="video-card">
-                    <iframe src="https://youtube.com" allowfullscreen></iframe>
-                    <h3>Avatar 1 - Official Trailer</h3>
+                    <iframe src="https://youtube.com" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h3>Avatar World - Cinematic Video</h3>
                 </div>
             </div>
          </div>
