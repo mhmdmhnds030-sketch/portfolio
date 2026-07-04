@@ -1,23 +1,21 @@
-
 <!DOCTYPE html>
 <html>
 <head>
     <title>Avatar - AI Gallery</title>
-    <!-- تصحيح روابط الـ preconnect لخطوط جوجل لتظهر بشكل سينمائي سليم -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./man.css"> 
     <style>
-        /* تم تعديل الصندوق ليمتد ويأخذ المساحة الكاملة بالتساوي دون تشويه الصور */
+        /* إلغاء التمركز التلقائي وإجبار الصندوق على أخذ عرض الكارت بالكامل */
         .gallery-box {
             display: flex;
             flex-direction: column;
             width: 100%;
-            max-width: 90%; 
-            margin: 0 auto;
+            max-width: 100%; 
+            margin: 0;
             padding: 0 40px;
-            align-items: center;
+            align-items: flex-start; 
         }
         .gallery-box h2 {
             font-family: 'Cinzel', serif;
@@ -26,8 +24,9 @@
             margin-bottom: 25px;
             text-transform: uppercase;
             letter-spacing: 2px;
+            text-align: left;
         }
-        /* توزيع مرن ومتساوي تماماً لكافة الكروت */
+  
         .images-grid {
             display: flex;
             gap: 30px; 
