@@ -22,11 +22,11 @@
                 border-radius: 8px;
                 box-shadow: 0 4px 15px rgba(0,0,0,0.3);
             }
-            iframe {
+            video {
                 width: 100%;
                 height: 220px;
                 border-radius: 6px;
-                border: none;
+                background: #000;
             }
             .video-card h3 {
                 color: #fff;
@@ -55,13 +55,19 @@
             
             <div class="video-grid">
                 <div class="video-card">
-                    <!-- لاحظ وجود كلمة embed في الرابط للسماح بالتشغيل -->
-                    <iframe src="https://youtube.com" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <h3>Avatar: The Way of Water - Scene</h3>
+                     
+                    <video controls>
+                        <source src="https://googleapis.com" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <h3>Avatar: Trailer Sample 1</h3>
                 </div>
                 <div class="video-card">
-                    <iframe src="https://youtube.com" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <h3>Avatar World - Cinematic Video</h3>
+                    <video controls>
+                        <source src="https://googleapis.com" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <h3>Avatar: Trailer Sample 2</h3>
                 </div>
             </div>
          </div>
