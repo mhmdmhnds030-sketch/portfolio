@@ -7,11 +7,16 @@
     <link href="https://googleapis.com/css2?family=Cinzel:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./man.css"> 
     <style>
-        /* تم تعديل المحاذاة لجهة اليسار وتصغير العرض لحماية تفاصيل الخلفية */
+        /* إجبار الخلفية في هذه الصفحة على الالتجاء لليمين ليظهر الوجه كاملاً */
+        .contaner {
+            background-position: right center !important;
+        }
+
+        /* المحاذاة جهة اليسار لتترك مساحة للوجه في اليمين */
         .gallery-box {
             display: flex;
             flex-direction: column;
-            width: 50%; /* تم تقليص العرض ليطابق صفحة clans ولا يغطي الوجه */
+            width: 55%; 
             margin-top: 20px;
             padding: 20px 40px;
         }
@@ -23,7 +28,6 @@
             text-transform: uppercase;
             letter-spacing: 2px;
         }
-        /* توزيع مرن وبمسافات متساوية بين الكروت */
         .images-grid {
             display: flex;
             gap: 20px; 
@@ -31,7 +35,7 @@
         }
         .ai-card {
             flex: 1;
-            height: 200px; /* تم تقليل الارتفاع قليلاً ليتناسب مع العرض الجديد */
+            height: 200px; 
             border-radius: 8px;
             overflow: hidden;
             border: 1px solid rgba(255, 255, 255, 0.15);
