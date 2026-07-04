@@ -2,20 +2,18 @@
 <html>
 <head>
     <title>Avatar - AI Gallery</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Cinzel:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./man.css"> 
     <style>
-        /* إلغاء التمركز التلقائي وإجبار الصندوق على أخذ عرض الكارت بالكامل */
+        /* تم تعديل المحاذاة لجهة اليسار وتصغير العرض لحماية تفاصيل الخلفية */
         .gallery-box {
             display: flex;
             flex-direction: column;
-            width: 100%;
-            max-width: 100%; 
-            margin: 0;
-            padding: 0 40px;
-            align-items: flex-end; 
+            width: 50%; /* تم تقليص العرض ليطابق صفحة clans ولا يغطي الوجه */
+            margin-top: 20px;
+            padding: 20px 40px;
         }
         .gallery-box h2 {
             font-family: 'Cinzel', serif;
@@ -24,18 +22,16 @@
             margin-bottom: 25px;
             text-transform: uppercase;
             letter-spacing: 2px;
-            text-align: left;
         }
-  
+        /* توزيع مرن وبمسافات متساوية بين الكروت */
         .images-grid {
             display: flex;
-            gap: 30px; 
+            gap: 20px; 
             width: 100%;
-            justify-content: space-between; 
         }
         .ai-card {
             flex: 1;
-            height: 240px;
+            height: 200px; /* تم تقليل الارتفاع قليلاً ليتناسب مع العرض الجديد */
             border-radius: 8px;
             overflow: hidden;
             border: 1px solid rgba(255, 255, 255, 0.15);
@@ -57,6 +53,7 @@
             transform: scale(1.1);
         }
         @media (max-width: 768px) {
+            .gallery-box { width: 100%; padding: 20px; }
             .images-grid { flex-direction: column; gap: 20px; }
             .ai-card { height: 180px; width: 100%; }
             .gallery-box h2 { font-size: 26px; }
