@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 <head>
     <title>Avatar - AI Gallery</title>
@@ -7,24 +7,27 @@
     <link href="https://googleapis.com/css2?family=Cinzel:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./man.css"> 
     <style>
-        /* سحب وإزاحة صورة الخلفية لأسفل واليمين لتظهر ملامح الوجه بوضوح كامل */
+        /* تم إرجاع الحاوية الرئيسية لوضعها الأصلي تماماً لتبدو الخلفية كاملة وبدون أي تغيير */
         .contaner {
-            background-position: right 25% bottom 10% !important;
+            background-position: center !important;
+            background-size: cover !important;
         }
 
-        /* المحاذاة جهة اليسار لتترك مساحة للوجه في اليمين */
+        /* تنسيق صندوق الكروت الثلاثة بالداخل */
         .gallery-box {
             display: flex;
             flex-direction: column;
-            width: 55%; 
-            margin-top: 25px;
-            padding: 20px 40px;
+            width: 100%;
+            max-width: 750px;
+            margin: 0 auto;
+            padding: 0 20px;
+            align-items: center;
         }
         .gallery-box h2 {
             font-family: 'Cinzel', serif;
             color: #fff;
             font-size: 32px;
-            margin-bottom: 25px;
+            margin-bottom: 20px;
             text-transform: uppercase;
             letter-spacing: 2px;
         }
@@ -32,10 +35,11 @@
             display: flex;
             gap: 20px; 
             width: 100%;
+            justify-content: center;
         }
         .ai-card {
             flex: 1;
-            height: 200px; 
+            height: 250px; 
             border-radius: 8px;
             overflow: hidden;
             border: 1px solid rgba(255, 255, 255, 0.15);
@@ -48,6 +52,7 @@
             object-fit: cover;
             transition: transform 0.5s ease;
         }
+        /* تأثير الإشعاع الأزرق عند تمرير الماوس */
         .ai-card:hover {
             transform: translateY(-5px);
             border-color: #00d2ff;
@@ -57,7 +62,6 @@
             transform: scale(1.1);
         }
         @media (max-width: 768px) {
-            .gallery-box { width: 100%; padding: 20px; }
             .images-grid { flex-direction: column; gap: 20px; }
             .ai-card { height: 180px; width: 100%; }
             .gallery-box h2 { font-size: 26px; }
