@@ -6,18 +6,16 @@
     <link rel="preconnect" href="https://gstatic.com" crossorigin>
     <link href="https://googleapis.com/css2?family=Cinzel:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./man.css"> 
-    <style>
-        /* إجبار الحاوية على إظهار الخلفية كاملة والتمدد مع المحتوى تلقائياً */
+    <style> 
         .contaner {
             width: 90%;
-            height: auto !important; /* تحويل الارتفاع لتلقائي لمنع قص الصورة */
+            height: auto !important; 
             min-height: 600px;
-            padding-bottom: 50px; /* مسافة أمان بالأسفل لإظهار بقية صورة الأفاتار */
+            padding-bottom: 50px; 
             background-position: center !important;
             background-size: cover !important;
         }
 
-        /* تنسيق صندوق الكروت الثلاثة بالداخل */
         .gallery-box {
             display: flex;
             flex-direction: column;
@@ -56,7 +54,7 @@
             object-fit: cover;
             transition: transform 0.5s ease;
         }
-        /* ميزة الإشعاع والتوهج المضيء عند تمرير الماوس */
+       
         .ai-card:hover {
             transform: translateY(-5px);
             border-color: #00d2ff;
