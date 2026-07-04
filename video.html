@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <title>Avatar - AI Gallery</title>
@@ -7,10 +7,14 @@
     <link href="https://googleapis.com/css2?family=Cinzel:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./man.css"> 
     <style>
-        /* تم إلغاء كل التعديلات الإضافية لتعود الخلفية الكبيرة كما صممتها في ملف الـ CSS الأصلي */
+        /* إجبار الحاوية على إظهار الخلفية كاملة والتمدد مع المحتوى تلقائياً */
         .contaner {
             width: 90%;
-            height: 550px;
+            height: auto !important; /* تحويل الارتفاع لتلقائي لمنع قص الصورة */
+            min-height: 600px;
+            padding-bottom: 50px; /* مسافة أمان بالأسفل لإظهار بقية صورة الأفاتار */
+            background-position: center !important;
+            background-size: cover !important;
         }
 
         /* تنسيق صندوق الكروت الثلاثة بالداخل */
