@@ -1,4 +1,3 @@
-/* إعادة تعيين الهوامش الافتراضية */
 * {
     padding: 0;
     margin: 0;
@@ -12,19 +11,18 @@ body {
     justify-content: center;
     align-items: center;
     font-family: 'Poppins', sans-serif;
-    overflow: hidden; /* يمنع ظهور أشرطة التمرير الخارجية للمتصفح */
+    overflow: hidden; 
 }
 
 a {
     color: white;
     text-decoration: none;
 }
-
-/* الحاوية الرئيسية *//* الحاوية الرئيسية بالاسم الجديد للملف */
+ 
 .contaner {
     background-image: 
         linear-gradient(to right, #01022de5 30%, #00000088),
-        url('../avataer.png'); /* 👈 إذا كانت صيغتها jpg غيرها إلى .jpg */
+        url('avataer.png'); /* تم تصحيح المسار ليعمل على المتصفح */
     width: 90%;
     height: 550px;
     background-position: center; 
@@ -37,7 +35,7 @@ a {
 .contaner:hover {
     background-image: 
         linear-gradient(to right, #01022de5 30%, transparent),
-        url('../avataer.png'); /* 👈 تأكد من تطابق الاسم والصيغة هنا أيضاً */
+        url('avataer.png'); /* تم تصحيح المسار هنا أيضاً ليعمل عند تمرير الفأرة */
 }
 
 
@@ -47,7 +45,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 25px 40px 10px 40px; 
-    animation: fadeInDown 1s ease forwards; /* حركة ظهور من الأعلى */
+    animation: fadeInDown 1s ease forwards; 
 }
 
 .logo {
@@ -73,7 +71,7 @@ ul a {
     transition: color 0.3s ease;
 }
 
-/* تأثير الخط السفلي الذكي عند تمرير الماوس فوق الروابط */
+
 ul a::after {
     content: '';
     position: absolute;
@@ -93,7 +91,7 @@ ul a:hover::after {
     width: 100%;
 }
 
-/* محتوى الصفحة الرئيسي */
+
 .conted {
     color: white;
     width: 60%;
@@ -105,7 +103,7 @@ h1 {
     font-family: 'Cinzel', serif;
     font-size: 70px;
     text-transform: uppercase;
-    animation: fadeInUp 1s ease forwards; /* حركة ظهور من الأسفل */
+    animation: fadeInUp 1s ease forwards; 
 }
 
 p {
@@ -114,7 +112,7 @@ p {
     padding: 15px 0;
     line-height: 1.6;
     color: #e0e0e0;
-    animation: fadeInUp 1.2s ease forwards; /* تظهر بعد العنوان بقليل */
+    animation: fadeInUp 1.2s ease forwards; 
 }
 
 /* زر الضغط المستقبلي */
