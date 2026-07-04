@@ -1,0 +1,174 @@
+/* إعادة تعيين الهوامش الافتراضية */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden; /* يمنع ظهور أشرطة التمرير الخارجية للمتصفح */
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* الحاوية الرئيسية *//* الحاوية الرئيسية بالاسم الجديد للملف */
+.contaner {
+    background-image: 
+        linear-gradient(to right, #01022de5 30%, #00000088),
+        url('../avataer.png'); /* 👈 إذا كانت صيغتها jpg غيرها إلى .jpg */
+    width: 90%;
+    height: 550px;
+    background-position: center; 
+    background-size: cover;
+    border-radius: 12px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    transition: background-image 0.8s ease;
+}
+
+.contaner:hover {
+    background-image: 
+        linear-gradient(to right, #01022de5 30%, transparent),
+        url('../avataer.png'); /* 👈 تأكد من تطابق الاسم والصيغة هنا أيضاً */
+}
+
+
+/* شريط التنقل العلوي */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 40px 10px 40px; 
+    animation: fadeInDown 1s ease forwards; /* حركة ظهور من الأعلى */
+}
+
+.logo {
+    font-family: 'Cinzel', serif;
+    font-size: 30px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+ul {
+    list-style: none;
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+ul a {
+    font-size: 16px;
+    position: relative;
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+/* تأثير الخط السفلي الذكي عند تمرير الماوس فوق الروابط */
+ul a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(10, 218, 10);
+    transition: width 0.3s ease;
+}
+
+ul a:hover {
+    color: rgb(10, 218, 10);
+}
+
+ul a:hover::after {
+    width: 100%;
+}
+
+/* محتوى الصفحة الرئيسي */
+.conted {
+    color: white;
+    width: 60%;
+    margin-top: 20px;
+    padding: 20px 40px;
+}
+
+h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 70px;
+    text-transform: uppercase;
+    animation: fadeInUp 1s ease forwards; /* حركة ظهور من الأسفل */
+}
+
+p {
+    letter-spacing: 1px;
+    max-width: 450px;
+    padding: 15px 0;
+    line-height: 1.6;
+    color: #e0e0e0;
+    animation: fadeInUp 1.2s ease forwards; /* تظهر بعد العنوان بقليل */
+}
+
+/* زر الضغط المستقبلي */
+button {
+    font-size: 16px;
+    padding: 12px 35px;
+    border-radius: 25px;
+    border: none;
+    background-color: #00d2ff;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 210, 255, 0.4);
+    transition: all 0.3s ease;
+    animation: fadeInUp 1.4s ease forwards;
+}
+
+button:hover {
+    background-color: white;
+    color: #01022d;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.4);
+}
+
+/* التعريف بالحركات (Animations) */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* التجاوب مع الهواتف الذكية */
+@media (max-width: 768px) {
+    body { padding: 10px; overflow: auto; }
+    .contaner { width: 100%; height: auto; padding-bottom: 40px; }
+    header { flex-direction: column; gap: 15px; padding: 20px; }
+    ul { width: 100%; justify-content: space-around; }
+    .conted { width: 100%; padding: 20px; text-align: center; margin-top: 10px; }
+    h1 { font-size: 45px; }
+    p { width: 100%; max-width: 100%; font-size: 14px; }
+}
