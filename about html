@@ -2,12 +2,13 @@
 <html>
 <head>
     <title>Avatar - About Us</title>
-    <link rel="preconnect" href="https://googleapis.com">
-    <link rel="preconnect" href="https://gstatic.com" crossorigin>
-    <link href="https://googleapis.com/css2?family=Cinzel:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./man.css"> 
     <style>
-        /* تنسيقات خاصة بصفحة من نحن لترتيب النصوص */
+     
         .about-box {
             color: white;
             width: 80%;
@@ -49,12 +50,10 @@
                 <li><a href="clans.html">clans</a></li> 
                 <li><a href="video.html">video</a></li>
                 <li><a href="phone.html">phone</a></li>
-               
                 <li><a href="about.html" style="color: rgb(10, 218, 10);">about</a></li>
             </ul>
         </header>
         
-    
         <div class="about-box">
             <h2>About Pandora</h2>
             <p>Welcome to our world dedicated to the universe of Avatar. We bridge the gap between human curiosity and the majestic wonders of Pandora, highlighting its fascinating ecosystems, diverse cultures, and deep connections with nature.</p>
